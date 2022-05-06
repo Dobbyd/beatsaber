@@ -1,0 +1,134 @@
+.cursorDiv{
+    background-color: black;
+    height: 100vh;
+}
+.cursorGrab{
+    position: absolute;
+    height: 100vh;
+    width: 25vh;
+    right: 0;
+    background-color: red;
+}
+div div:nth-of-type(1) img{
+    margin: -0.2em;
+    width: 3%;
+    left:45%;
+    top:15em;
+    position: relative;
+}
+div div:nth-of-type(2) img{
+    margin: -0.2em;
+    width: 3%;
+    left:35%;
+    top:15em;
+    position: relative;  
+}
+div div:nth-of-type(3) img{
+    margin: -0.2em;
+    width: 3%;
+    left:55%;
+    top:15em;
+    position: relative;
+}
+
+.blockOneDestroy{
+    transform: rotate(-45deg);
+    opacity: 0%;
+    transition: 1s;
+    left: 40% !important;
+    
+}
+.blockTwoDestroy{
+    transform: rotate(45deg);
+    transition: 1s;
+    opacity: 0%;
+    left: 55% !important;
+}
+.blockThreeDestroy{
+transform: rotate(-45deg);
+    left: 30%!important;
+    opacity: 0%;
+    transition: 1s;
+    
+}
+.blockFourDestroy{
+transform: rotate(45deg);
+    left: 40%!important;
+    transition: 1s;
+    opacity: 0%
+}
+.blockFiveDestroy{
+transform: rotate(-45deg);
+    left: 50%!important;
+    opacity: 0%;
+    transition: 1s;
+    
+}
+.blockSixDestroy{
+transform: rotate(45deg);
+    left: 60%!important;
+    transition: 1s;
+    opacity: 0%
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.saberGrabbed{
+    cursor: url(/images/Light_Saber_Blue.png) 50 50,  auto;
+}
+.saberGrabbed .grabSaber{
+    opacity: 0%;
+}
+.gameDone{
+    opacity: 0%;
+}
+h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px black;
+   
+}
+.animation{
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transition: 2s;
+    
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.grabSaber{
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transition: 2s;
+    margin-left: 4em;
+}
+p{
+    position: absolute;
+    top:5em;
+    left: 30%;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 4em;
+    color: white;
+    
+    
+}
